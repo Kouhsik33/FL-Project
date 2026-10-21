@@ -1,0 +1,111 @@
+{
+ "strategy": "dirichlet",
+ "n_clients": 5,
+ "seed": 0,
+ "alpha": 1.0,
+ "proportions": [
+  [
+   0.29927266982747547,
+   0.4487766273694334,
+   0.008717921248874971,
+   0.000998846282454981,
+   0.2422339352717613
+  ],
+  [
+   0.13658683849231343,
+   0.056445354695687004,
+   0.06329324825661109,
+   0.23604291507257738,
+   0.5076316434828112
+  ]
+ ],
+ "client_names": [
+  "client_0",
+  "client_1",
+  "client_2",
+  "client_3",
+  "client_4"
+ ],
+ "clients": [
+  {
+   "client": 0,
+   "name": "client_0",
+   "n_train": 81,
+   "n_train_pos": 17,
+   "n_train_neg": 64,
+   "pos_frac_train": 0.20987654320987653,
+   "n_val": 27,
+   "n_val_pos": 6,
+   "n_val_neg": 21,
+   "pos_frac_val": 0.2222222222222222,
+   "n_test": 28,
+   "n_test_pos": 6,
+   "n_test_neg": 22,
+   "pos_frac_test": 0.21428571428571427
+  },
+  {
+   "client": 1,
+   "name": "client_1",
+   "n_train": 104,
+   "n_train_pos": 8,
+   "n_train_neg": 96,
+   "pos_frac_train": 0.07692307692307693,
+   "n_val": 34,
+   "n_val_pos": 2,
+   "n_val_neg": 32,
+   "pos_frac_val": 0.058823529411764705,
+   "n_test": 34,
+   "n_test_pos": 2,
+   "n_test_neg": 32,
+   "pos_frac_test": 0.058823529411764705
+  },
+  {
+   "client": 2,
+   "name": "client_2",
+   "n_train": 10,
+   "n_train_pos": 8,
+   "n_train_neg": 2,
+   "pos_frac_train": 0.8,
+   "n_val": 4,
+   "n_val_pos": 3,
+   "n_val_neg": 1,
+   "pos_frac_val": 0.75,
+   "n_test": 3,
+   "n_test_pos": 3,
+   "n_test_neg": 0,
+   "pos_frac_test": 1.0
+  },
+  {
+   "client": 3,
+   "name": "client_3",
+   "n_train": 30,
+   "n_train_pos": 30,
+   "n_train_neg": 0,
+   "pos_frac_train": 1.0,
+   "n_val": 10,
+   "n_val_pos": 10,
+   "n_val_neg": 0,
+   "pos_frac_val": 1.0,
+   "n_test": 11,
+   "n_test_pos": 10,
+   "n_test_neg": 1,
+   "pos_frac_test": 0.9090909090909091
+  },
+  {
+   "client": 4,
+   "name": "client_4",
+   "n_train": 116,
+   "n_train_pos": 64,
+   "n_train_neg": 52,
+   "pos_frac_train": 0.5517241379310345,
+   "n_val": 39,
+   "n_val_pos": 22,
+   "n_val_neg": 17,
+   "pos_frac_val": 0.5641025641025641,
+   "n_test": 38,
+   "n_test_pos": 21,
+   "n_test_neg": 17,
+   "pos_frac_test": 0.5526315789473685
+  }
+ ]
+}

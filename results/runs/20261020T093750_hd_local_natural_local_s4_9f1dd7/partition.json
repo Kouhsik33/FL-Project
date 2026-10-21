@@ -1,0 +1,92 @@
+{
+ "strategy": "natural",
+ "n_clients": 4,
+ "seed": 4,
+ "alpha": null,
+ "proportions": [
+  [
+   0.3967611336032389,
+   0.4574898785425101,
+   0.020242914979757085,
+   0.12550607287449392
+  ],
+  [
+   0.2721311475409836,
+   0.2098360655737705,
+   0.2262295081967213,
+   0.29180327868852457
+  ]
+ ],
+ "client_names": [
+  "cleveland",
+  "hungary",
+  "switzerland",
+  "va_long_beach"
+ ],
+ "clients": [
+  {
+   "client": 0,
+   "name": "cleveland",
+   "n_train": 181,
+   "n_train_pos": 83,
+   "n_train_neg": 98,
+   "pos_frac_train": 0.4585635359116022,
+   "n_val": 61,
+   "n_val_pos": 28,
+   "n_val_neg": 33,
+   "pos_frac_val": 0.45901639344262296,
+   "n_test": 61,
+   "n_test_pos": 28,
+   "n_test_neg": 33,
+   "pos_frac_test": 0.45901639344262296
+  },
+  {
+   "client": 1,
+   "name": "hungary",
+   "n_train": 177,
+   "n_train_pos": 64,
+   "n_train_neg": 113,
+   "pos_frac_train": 0.3615819209039548,
+   "n_val": 59,
+   "n_val_pos": 21,
+   "n_val_neg": 38,
+   "pos_frac_val": 0.3559322033898305,
+   "n_test": 58,
+   "n_test_pos": 21,
+   "n_test_neg": 37,
+   "pos_frac_test": 0.3620689655172414
+  },
+  {
+   "client": 2,
+   "name": "switzerland",
+   "n_train": 74,
+   "n_train_pos": 69,
+   "n_train_neg": 5,
+   "pos_frac_train": 0.9324324324324325,
+   "n_val": 24,
+   "n_val_pos": 23,
+   "n_val_neg": 1,
+   "pos_frac_val": 0.9583333333333334,
+   "n_test": 25,
+   "n_test_pos": 23,
+   "n_test_neg": 2,
+   "pos_frac_test": 0.92
+  },
+  {
+   "client": 3,
+   "name": "va_long_beach",
+   "n_train": 120,
+   "n_train_pos": 89,
+   "n_train_neg": 31,
+   "pos_frac_train": 0.7416666666666667,
+   "n_val": 40,
+   "n_val_pos": 30,
+   "n_val_neg": 10,
+   "pos_frac_val": 0.75,
+   "n_test": 40,
+   "n_test_pos": 30,
+   "n_test_neg": 10,
+   "pos_frac_test": 0.75
+  }
+ ]
+}

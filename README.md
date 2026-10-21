@@ -4,6 +4,53 @@ A locally runnable research prototype. Several healthcare institutions are **sim
 
 > **Scope and honesty statement.** Every institution here is simulated, and the data are public, de-identified research datasets (UCI). No real hospital took part, no clinical validation was performed, and the models must **not** be used for diagnosis. Federated learning alone is not a privacy guarantee. See [docs/architecture.md §4](docs/architecture.md) for exactly what each mechanism does and does not protect.
 
+## Quick start
+
+Two ways to use this repository. Both are tested in a fresh clone. Commands assume macOS or Linux with Python 3.11; the environment was tested on an Intel Mac.
+
+### A. View the results (dashboard only, about 5 minutes)
+
+The dashboard reads the saved results in `results/runs/` (199 runs, committed with the code). It does **not** need the datasets, the model checkpoints, or the 1.5-hour experiment suite.
+
+```bash
+git clone https://github.com/Kouhsik33/FL-Project.git
+cd FL-Project
+python3.11 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.lock      # exact pinned versions
+pip install -e . --no-deps             # installs the fedmed package from src/
+streamlit run dashboard/app.py         # open http://localhost:8501
+```
+
+Expected on the Overview page: **199 saved runs**, 124 federated, 2 datasets, 5 seeds. No loader errors appear in the sidebar. Nine pages are listed in the sidebar; each renders from the saved `summary.json` files.
+
+Check the dashboard against the result files (no data download needed):
+
+```bash
+pytest tests/test_dashboard.py tests/test_dashboard_validation.py -q
+```
+
+### B. Reproduce the experiments (needs the datasets, about 2 hours)
+
+Run the steps in [Setup](#setup) and [Run](#run) below. The dataset download is needed only for this path, and only because the code reads the raw files. Do not run `python -m fedmed.experiments.suite` unless you intend to overwrite `results/suite_index.jsonl` and `results/runs/`.
+
+### What is committed, and what is not
+
+| Path | Committed? | Used by |
+|---|---|---|
+| `results/runs/<run_id>/summary.json`, `config.yaml`, `partition.json`, `client_log.jsonl`, `comm_log.jsonl`, `server_log.json` | yes (37 MB) | dashboard, report, tests |
+| `results/runs/<run_id>/checkpoints/*.pt` | yes (3 MB) | checkpoint re-evaluation |
+| `results/report/`, `results/suite_index.jsonl`, `results/tuning_*.json`, `results/archive/` | yes | report, provenance |
+| `data/raw/` (datasets) | **no**, re-downloaded by `scripts/download_data.py` | experiments, data tests |
+| `.venv/` | no | local environment |
+
+### Notes for AI agents and reviewers
+
+- Start with the dashboard path (A). It is the fastest way to confirm the results.
+- Results are immutable inputs. Do not edit `results/runs/`, `results/suite_index.jsonl`, or `results/archive/`. Each run is a self-contained folder.
+- `results/archive/summaries_before_f1_fix.tar.gz` holds the summaries from before the F1 correction. Current summaries are tagged `f1_recomputed_from_confusion_counts_2026-10-20` in their `corrections` field.
+- Test selection: `pytest -m "not slow"` is the fast suite. Plain `pytest` runs everything, including Flower/Ray simulations (about 1.5 minutes).
+- Read `PROJECT_STATUS.md` for the current status, the known issues, and the pending decisions. Read `docs/final_report.md` for the methodology and results.
+
 ## What it does (mapped to the submitted abstract)
 
 | Abstract objective | Implementation |
@@ -81,7 +128,7 @@ src/fedmed/
 dashboard/       Streamlit app (data.py loader + app.py)
 tests/           unit, integration and end-to-end tests
 docs/            research, dataset assessment, architecture, plan, references, final report
-results/         tuning files, suite index, report tables (run directories are git-ignored)
+results/         the 199 saved runs (committed), suite index, report tables, tuning files, archive
 ```
 
 ## Results (199 runs; WDBC test set, n = 114; mean ± std over seeds)

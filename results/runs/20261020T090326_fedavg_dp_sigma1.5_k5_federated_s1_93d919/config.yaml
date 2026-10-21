@@ -1,0 +1,51 @@
+name: fedavg_dp_sigma1.5_k5
+mode: federated
+seed: 1
+data:
+  dataset: wdbc
+  val_frac: 0.2
+  test_frac: 0.2
+  split_seed: 0
+partition:
+  strategy: iid
+  n_clients: 5
+  alpha: null
+  min_train_per_client: 8
+model:
+  hidden:
+  - 32
+  - 16
+train:
+  lr: 0.005
+  momentum: 0.9
+  weight_decay: 0.0
+  batch_size: 16
+  local_epochs: 1
+  epochs: 20
+  threshold: 0.5
+federated:
+  rounds: 20
+  fraction_fit: 1.0
+  min_fit_clients: 2
+  dropout_rate: 0.0
+  midround_failure_rate: 0.0
+  round_timeout: 600
+privacy:
+  enabled: true
+  noise_multiplier: 1.5
+  max_grad_norm: 1.0
+  delta: 1.0e-05
+  accountant: rdp
+  secure_mode: false
+secagg:
+  enabled: false
+  num_shares: 1.0
+  reconstruction_threshold: 0.6
+  max_weight: 1000.0
+  clipping_range: 8.0
+  quantization_range: 4194304
+  timeout: 600
+output:
+  runs_dir: results/runs
+  save_checkpoints: true
+  tag: C

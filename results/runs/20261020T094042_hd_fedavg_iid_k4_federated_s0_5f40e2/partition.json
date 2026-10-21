@@ -1,0 +1,92 @@
+{
+ "strategy": "iid",
+ "n_clients": 4,
+ "seed": 0,
+ "alpha": null,
+ "proportions": [
+  [
+   0.25,
+   0.25,
+   0.25,
+   0.25
+  ],
+  [
+   0.25,
+   0.25,
+   0.25,
+   0.25
+  ]
+ ],
+ "client_names": [
+  "client_0",
+  "client_1",
+  "client_2",
+  "client_3"
+ ],
+ "clients": [
+  {
+   "client": 0,
+   "name": "client_0",
+   "n_train": 138,
+   "n_train_pos": 76,
+   "n_train_neg": 62,
+   "pos_frac_train": 0.5507246376811594,
+   "n_val": 46,
+   "n_val_pos": 26,
+   "n_val_neg": 20,
+   "pos_frac_val": 0.5652173913043478,
+   "n_test": 46,
+   "n_test_pos": 26,
+   "n_test_neg": 20,
+   "pos_frac_test": 0.5652173913043478
+  },
+  {
+   "client": 1,
+   "name": "client_1",
+   "n_train": 138,
+   "n_train_pos": 76,
+   "n_train_neg": 62,
+   "pos_frac_train": 0.5507246376811594,
+   "n_val": 46,
+   "n_val_pos": 25,
+   "n_val_neg": 21,
+   "pos_frac_val": 0.5434782608695652,
+   "n_test": 46,
+   "n_test_pos": 25,
+   "n_test_neg": 21,
+   "pos_frac_test": 0.5434782608695652
+  },
+  {
+   "client": 2,
+   "name": "client_2",
+   "n_train": 138,
+   "n_train_pos": 77,
+   "n_train_neg": 61,
+   "pos_frac_train": 0.5579710144927537,
+   "n_val": 46,
+   "n_val_pos": 25,
+   "n_val_neg": 21,
+   "pos_frac_val": 0.5434782608695652,
+   "n_test": 46,
+   "n_test_pos": 25,
+   "n_test_neg": 21,
+   "pos_frac_test": 0.5434782608695652
+  },
+  {
+   "client": 3,
+   "name": "client_3",
+   "n_train": 138,
+   "n_train_pos": 76,
+   "n_train_neg": 62,
+   "pos_frac_train": 0.5507246376811594,
+   "n_val": 46,
+   "n_val_pos": 26,
+   "n_val_neg": 20,
+   "pos_frac_val": 0.5652173913043478,
+   "n_test": 46,
+   "n_test_pos": 26,
+   "n_test_neg": 20,
+   "pos_frac_test": 0.5652173913043478
+  }
+ ]
+}

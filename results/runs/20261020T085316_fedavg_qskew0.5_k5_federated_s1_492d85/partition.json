@@ -1,0 +1,111 @@
+{
+ "strategy": "quantity_skew",
+ "n_clients": 5,
+ "seed": 1,
+ "alpha": 0.5,
+ "proportions": [
+  [
+   0.022410232057208913,
+   0.307453058585515,
+   0.23926046254651762,
+   0.08155713858600387,
+   0.3493191082247546
+  ],
+  [
+   0.022410232057208913,
+   0.307453058585515,
+   0.23926046254651762,
+   0.08155713858600387,
+   0.3493191082247546
+  ]
+ ],
+ "client_names": [
+  "client_0",
+  "client_1",
+  "client_2",
+  "client_3",
+  "client_4"
+ ],
+ "clients": [
+  {
+   "client": 0,
+   "name": "client_0",
+   "n_train": 8,
+   "n_train_pos": 3,
+   "n_train_neg": 5,
+   "pos_frac_train": 0.375,
+   "n_val": 3,
+   "n_val_pos": 1,
+   "n_val_neg": 2,
+   "pos_frac_val": 0.3333333333333333,
+   "n_test": 3,
+   "n_test_pos": 1,
+   "n_test_neg": 2,
+   "pos_frac_test": 0.3333333333333333
+  },
+  {
+   "client": 1,
+   "name": "client_1",
+   "n_train": 105,
+   "n_train_pos": 39,
+   "n_train_neg": 66,
+   "pos_frac_train": 0.37142857142857144,
+   "n_val": 34,
+   "n_val_pos": 13,
+   "n_val_neg": 21,
+   "pos_frac_val": 0.38235294117647056,
+   "n_test": 35,
+   "n_test_pos": 13,
+   "n_test_neg": 22,
+   "pos_frac_test": 0.37142857142857144
+  },
+  {
+   "client": 2,
+   "name": "client_2",
+   "n_train": 81,
+   "n_train_pos": 30,
+   "n_train_neg": 51,
+   "pos_frac_train": 0.37037037037037035,
+   "n_val": 27,
+   "n_val_pos": 10,
+   "n_val_neg": 17,
+   "pos_frac_val": 0.37037037037037035,
+   "n_test": 27,
+   "n_test_pos": 10,
+   "n_test_neg": 17,
+   "pos_frac_test": 0.37037037037037035
+  },
+  {
+   "client": 3,
+   "name": "client_3",
+   "n_train": 28,
+   "n_train_pos": 11,
+   "n_train_neg": 17,
+   "pos_frac_train": 0.39285714285714285,
+   "n_val": 10,
+   "n_val_pos": 4,
+   "n_val_neg": 6,
+   "pos_frac_val": 0.4,
+   "n_test": 9,
+   "n_test_pos": 3,
+   "n_test_neg": 6,
+   "pos_frac_test": 0.3333333333333333
+  },
+  {
+   "client": 4,
+   "name": "client_4",
+   "n_train": 119,
+   "n_train_pos": 44,
+   "n_train_neg": 75,
+   "pos_frac_train": 0.3697478991596639,
+   "n_val": 40,
+   "n_val_pos": 15,
+   "n_val_neg": 25,
+   "pos_frac_val": 0.375,
+   "n_test": 40,
+   "n_test_pos": 15,
+   "n_test_neg": 25,
+   "pos_frac_test": 0.375
+  }
+ ]
+}

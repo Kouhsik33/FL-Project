@@ -11,8 +11,8 @@ __pycache__/
 data/raw/
 data/processed/
 
-# Generated experiment artefacts (re-create with the commands in README.md)
-results/runs/
+# Generated experiment artefacts. results/runs/ (199 runs, about 37 MB) is committed on
+# purpose so the dashboard and report run from a clone without re-training.
 results/checkpoints/
 results/*.log
 

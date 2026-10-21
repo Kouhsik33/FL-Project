@@ -1,0 +1,100 @@
+{"client_id": 3, "round": 1, "event": "simulated_failure", "t": 1792488364.05158}
+{"client_id": 0, "round": 1, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6792352900785559, "train_time_s": 0.03372435498749837, "start_param_abs_sum": 138.71009168028831}
+{"client_id": 2, "round": 1, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6820384708803091, "train_time_s": 0.03447866201167926, "start_param_abs_sum": 138.71009168028831}
+{"client_id": 4, "round": 1, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6765844786868376, "train_time_s": 0.0328139629564248, "start_param_abs_sum": 138.71009168028831}
+{"client_id": 1, "round": 1, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6799567039462103, "train_time_s": 0.03379954001866281, "start_param_abs_sum": 138.71009168028831}
+{"client_id": 0, "round": 2, "event": "simulated_failure", "t": 1792488365.1706188}
+{"client_id": 1, "round": 2, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6767314050508582, "train_time_s": 0.009335778013337404, "start_param_abs_sum": 138.7258934378624}
+{"client_id": 2, "round": 2, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.678488552570343, "train_time_s": 0.008935350982937962, "start_param_abs_sum": 138.7258934378624}
+{"client_id": 3, "round": 2, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.682768470135288, "train_time_s": 0.00826115597737953, "start_param_abs_sum": 138.7258934378624}
+{"client_id": 4, "round": 2, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6727212211664986, "train_time_s": 0.0308022330282256, "start_param_abs_sum": 138.7258934378624}
+{"client_id": 0, "round": 3, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6727226762210622, "train_time_s": 0.007619013951625675, "start_param_abs_sum": 138.73993331193924}
+{"client_id": 2, "round": 3, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6749157060438128, "train_time_s": 0.007241729996167123, "start_param_abs_sum": 138.73993331193924}
+{"client_id": 3, "round": 3, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6791916100875192, "train_time_s": 0.006256167951505631, "start_param_abs_sum": 138.73993331193924}
+{"client_id": 1, "round": 3, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6736729041389797, "train_time_s": 0.006319584033917636, "start_param_abs_sum": 138.73993331193924}
+{"client_id": 4, "round": 3, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.669204592704773, "train_time_s": 0.005998223030474037, "start_param_abs_sum": 138.73993331193924}
+{"client_id": 1, "round": 4, "event": "simulated_failure", "t": 1792488366.318871}
+{"client_id": 0, "round": 4, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6695632093092975, "train_time_s": 0.006359328981488943, "start_param_abs_sum": 138.7581560537219}
+{"client_id": 2, "round": 4, "event": "simulated_failure", "t": 1792488366.324925}
+{"client_id": 3, "round": 4, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6755261006562606, "train_time_s": 0.00611311401007697, "start_param_abs_sum": 138.7581560537219}
+{"client_id": 4, "round": 4, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6655892238897436, "train_time_s": 0.004777487018145621, "start_param_abs_sum": 138.7581560537219}
+{"client_id": 0, "round": 5, "event": "simulated_failure", "t": 1792488366.520761}
+{"client_id": 1, "round": 5, "event": "simulated_failure", "t": 1792488366.527682}
+{"client_id": 2, "round": 5, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6681581548790434, "train_time_s": 0.007952147047035396, "start_param_abs_sum": 138.7797543555498}
+{"client_id": 3, "round": 5, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6721100297527037, "train_time_s": 0.005921817966736853, "start_param_abs_sum": 138.7797543555498}
+{"client_id": 4, "round": 5, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.661978591890896, "train_time_s": 0.00759793003089726, "start_param_abs_sum": 138.7797543555498}
+{"client_id": 0, "round": 6, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6634530319887049, "train_time_s": 0.005294775997754186, "start_param_abs_sum": 138.79818148911}
+{"client_id": 1, "round": 6, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.664381856503694, "train_time_s": 0.005520446982700378, "start_param_abs_sum": 138.79818148911}
+{"client_id": 2, "round": 6, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6647054641994078, "train_time_s": 0.004981627978850156, "start_param_abs_sum": 138.79818148911}
+{"client_id": 4, "round": 6, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6583245116121629, "train_time_s": 0.008549631049390882, "start_param_abs_sum": 138.79818148911}
+{"client_id": 3, "round": 6, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6684888134831968, "train_time_s": 0.005838139972183853, "start_param_abs_sum": 138.79818148911}
+{"client_id": 1, "round": 7, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.661445589169212, "train_time_s": 0.005614297988358885, "start_param_abs_sum": 138.82852405309677}
+{"client_id": 2, "round": 7, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6612189412117004, "train_time_s": 0.005536074982956052, "start_param_abs_sum": 138.82852405309677}
+{"client_id": 0, "round": 7, "event": "simulated_failure", "t": 1792488366.85359}
+{"client_id": 3, "round": 7, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6651396552721659, "train_time_s": 0.00674987502861768, "start_param_abs_sum": 138.82852405309677}
+{"client_id": 4, "round": 7, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6551411432378432, "train_time_s": 0.00575185299385339, "start_param_abs_sum": 138.82852405309677}
+{"client_id": 0, "round": 8, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.657354474067688, "train_time_s": 0.005963950010482222, "start_param_abs_sum": 138.86478231102228}
+{"client_id": 1, "round": 8, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6579365678455519, "train_time_s": 0.005474160017911345, "start_param_abs_sum": 138.86478231102228}
+{"client_id": 2, "round": 8, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6577352659026189, "train_time_s": 0.0062998279463499784, "start_param_abs_sum": 138.86478231102228}
+{"client_id": 3, "round": 8, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6618111323619235, "train_time_s": 0.006576125975698233, "start_param_abs_sum": 138.86478231102228}
+{"client_id": 4, "round": 8, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6511555138756248, "train_time_s": 0.0059166859718970954, "start_param_abs_sum": 138.86478231102228}
+{"client_id": 1, "round": 9, "event": "simulated_failure", "t": 1792488367.1544309}
+{"client_id": 0, "round": 9, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6541125213398653, "train_time_s": 0.0064797549857757986, "start_param_abs_sum": 138.90297659486532}
+{"client_id": 3, "round": 9, "event": "simulated_failure", "t": 1792488367.166046}
+{"client_id": 2, "round": 9, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6543675821218917, "train_time_s": 0.006851824990008026, "start_param_abs_sum": 138.90297659486532}
+{"client_id": 4, "round": 9, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6475232769461239, "train_time_s": 0.0056757599813863635, "start_param_abs_sum": 138.90297659486532}
+{"client_id": 1, "round": 10, "event": "simulated_failure", "t": 1792488367.3584151}
+{"client_id": 2, "round": 10, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6506971067457057, "train_time_s": 0.007150830002501607, "start_param_abs_sum": 138.94736305624247}
+{"client_id": 3, "round": 10, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6550482027772544, "train_time_s": 0.007404221978504211, "start_param_abs_sum": 138.94736305624247}
+{"client_id": 0, "round": 10, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6509345103712643, "train_time_s": 0.006819833011832088, "start_param_abs_sum": 138.94736305624247}
+{"client_id": 4, "round": 10, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6436395750326269, "train_time_s": 0.005107643955852836, "start_param_abs_sum": 138.94736305624247}
+{"client_id": 1, "round": 11, "event": "simulated_failure", "t": 1792488367.571015}
+{"client_id": 0, "round": 11, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.647587471148547, "train_time_s": 0.007630558975506574, "start_param_abs_sum": 138.99267696589231}
+{"client_id": 2, "round": 11, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6469517972931933, "train_time_s": 0.006202512013260275, "start_param_abs_sum": 138.99267696589231}
+{"client_id": 4, "round": 11, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.639963637380039, "train_time_s": 0.004508490965235978, "start_param_abs_sum": 138.99267696589231}
+{"client_id": 3, "round": 11, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6515592163887577, "train_time_s": 0.0052925749914720654, "start_param_abs_sum": 138.99267696589231}
+{"client_id": 0, "round": 12, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.64441558192758, "train_time_s": 0.0044970249873586, "start_param_abs_sum": 139.03861156851053}
+{"client_id": 2, "round": 12, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6433289077744555, "train_time_s": 0.007861975987907499, "start_param_abs_sum": 139.03861156851053}
+{"client_id": 3, "round": 12, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6484648395275724, "train_time_s": 0.006679220998194069, "start_param_abs_sum": 139.03861156851053}
+{"client_id": 4, "round": 12, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6362590018440696, "train_time_s": 0.0055163559736683965, "start_param_abs_sum": 139.03861156851053}
+{"client_id": 1, "round": 12, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6446089278096738, "train_time_s": 0.007064568984787911, "start_param_abs_sum": 139.03861156851053}
+{"client_id": 0, "round": 13, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.640998545814963, "train_time_s": 0.005703965027350932, "start_param_abs_sum": 139.08747566491365}
+{"client_id": 1, "round": 13, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6412089821221172, "train_time_s": 0.005486607959028333, "start_param_abs_sum": 139.08747566491365}
+{"client_id": 3, "round": 13, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6446065816326417, "train_time_s": 0.0059148650034330785, "start_param_abs_sum": 139.08747566491365}
+{"client_id": 2, "round": 13, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6395772606579225, "train_time_s": 0.005654556036461145, "start_param_abs_sum": 139.08747566491365}
+{"client_id": 4, "round": 13, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6322260008138769, "train_time_s": 0.006527019024360925, "start_param_abs_sum": 139.08747566491365}
+{"client_id": 0, "round": 14, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6374150795095107, "train_time_s": 0.005000987963285297, "start_param_abs_sum": 139.14071559160948}
+{"client_id": 2, "round": 14, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6358963758198183, "train_time_s": 0.006169346976093948, "start_param_abs_sum": 139.14071559160948}
+{"client_id": 1, "round": 14, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6376477341721023, "train_time_s": 0.006371897005010396, "start_param_abs_sum": 139.14071559160948}
+{"client_id": 4, "round": 14, "event": "simulated_failure", "t": 1792488368.000961}
+{"client_id": 3, "round": 14, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6411191466925801, "train_time_s": 0.006368528003804386, "start_param_abs_sum": 139.14071559160948}
+{"client_id": 0, "round": 15, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6338694866965798, "train_time_s": 0.0054743249784223735, "start_param_abs_sum": 139.19399304687977}
+{"client_id": 2, "round": 15, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6320019622347248, "train_time_s": 0.005095396016258746, "start_param_abs_sum": 139.19399304687977}
+{"client_id": 4, "round": 15, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.624386752352995, "train_time_s": 0.0064741449896246195, "start_param_abs_sum": 139.19399304687977}
+{"client_id": 1, "round": 15, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6339934658313143, "train_time_s": 0.0059433309943415225, "start_param_abs_sum": 139.19399304687977}
+{"client_id": 3, "round": 15, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6374932803969452, "train_time_s": 0.006639992992859334, "start_param_abs_sum": 139.19399304687977}
+{"client_id": 1, "round": 16, "event": "simulated_failure", "t": 1792488368.399837}
+{"client_id": 0, "round": 16, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6303613361190347, "train_time_s": 0.004836987005546689, "start_param_abs_sum": 139.25467386841774}
+{"client_id": 2, "round": 16, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.627960205078125, "train_time_s": 0.005214507051277906, "start_param_abs_sum": 139.25467386841774}
+{"client_id": 3, "round": 16, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6338789843130803, "train_time_s": 0.004540757974609733, "start_param_abs_sum": 139.25467386841774}
+{"client_id": 4, "round": 16, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6199367607341093, "train_time_s": 0.004238629946485162, "start_param_abs_sum": 139.25467386841774}
+{"client_id": 0, "round": 17, "event": "simulated_failure", "t": 1792488368.501652}
+{"client_id": 1, "round": 17, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6262328434681547, "train_time_s": 0.005783232976682484, "start_param_abs_sum": 139.31997169554234}
+{"client_id": 2, "round": 17, "event": "simulated_failure", "t": 1792488368.525771}
+{"client_id": 3, "round": 17, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6298354725906814, "train_time_s": 0.006653404969256371, "start_param_abs_sum": 139.31997169554234}
+{"client_id": 4, "round": 17, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6154412522035486, "train_time_s": 0.0064289800357073545, "start_param_abs_sum": 139.31997169554234}
+{"client_id": 0, "round": 18, "event": "simulated_failure", "t": 1792488368.7098591}
+{"client_id": 1, "round": 18, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.622299837893334, "train_time_s": 0.007260815997142345, "start_param_abs_sum": 139.39438784122467}
+{"client_id": 2, "round": 18, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6193221576178252, "train_time_s": 0.00816976698115468, "start_param_abs_sum": 139.39438784122467}
+{"client_id": 3, "round": 18, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.62574910685636, "train_time_s": 0.005040732037741691, "start_param_abs_sum": 139.39438784122467}
+{"client_id": 4, "round": 18, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6107474916121539, "train_time_s": 0.00533742003608495, "start_param_abs_sum": 139.39438784122467}
+{"client_id": 0, "round": 19, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6182162656503565, "train_time_s": 0.006044434965588152, "start_param_abs_sum": 139.47066539525986}
+{"client_id": 1, "round": 19, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6177634786868441, "train_time_s": 0.00671625800896436, "start_param_abs_sum": 139.47066539525986}
+{"client_id": 2, "round": 19, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6146851795822826, "train_time_s": 0.006803176016546786, "start_param_abs_sum": 139.47066539525986}
+{"client_id": 4, "round": 19, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6060565219205969, "train_time_s": 0.006004118011333048, "start_param_abs_sum": 139.47066539525986}
+{"client_id": 3, "round": 19, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6214738540027452, "train_time_s": 0.004846950992941856, "start_param_abs_sum": 139.47066539525986}
+{"client_id": 0, "round": 20, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6139863624292261, "train_time_s": 0.005644020042382181, "start_param_abs_sum": 139.5480509251356}
+{"client_id": 1, "round": 20, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6133721349895864, "train_time_s": 0.00665770098567009, "start_param_abs_sum": 139.5480509251356}
+{"client_id": 2, "round": 20, "event": "fit", "n_train": 67, "steps": 5, "train_loss": 0.6099045979442881, "train_time_s": 0.007279995013959706, "start_param_abs_sum": 139.5480509251356}
+{"client_id": 3, "round": 20, "event": "fit", "n_train": 69, "steps": 5, "train_loss": 0.6173158089319865, "train_time_s": 0.005435746978037059, "start_param_abs_sum": 139.5480509251356}
+{"client_id": 4, "round": 20, "event": "fit", "n_train": 68, "steps": 5, "train_loss": 0.6008297906202429, "train_time_s": 0.004413489019498229, "start_param_abs_sum": 139.5480509251356}

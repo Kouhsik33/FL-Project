@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fedmed"
+version = "0.1.0"
+description = "Federated Learning for Privacy-Preserving Medical Diagnosis (simulated research prototype)"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+# Pins are deliberate; see docs/technical_research.md section 2 (compatibility matrix).
+# torch 2.2.2 is the last release with macOS x86_64 wheels; opacus 1.5.3 is the newest
+# release that imports with torch 2.2 (1.5.4 references torch.nn.RMSNorm, added in 2.4).
+# flwr is installed WITHOUT the [simulation] extra because that extra pins ray==2.55.1,
+# which has no macOS x86_64 wheel; ray 2.49.2 is pinned explicitly instead.
+dependencies = [
+    "torch==2.2.2",
+    "numpy>=1.26,<2",
+    "flwr==1.40.0",
+    "ray==2.49.2",
+    "opacus==1.5.3",
+    "scikit-learn>=1.5,<1.8",
+    "pandas>=2.2,<3",
+    "pyyaml>=6",
+    "streamlit>=1.40",
+    "plotly>=5.24",
+    "pyarrow==21.0.0",  # pyarrow >= 22 requires numpy >= 2, incompatible with torch 2.2
+    "pytest>=8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: runs a Flower/Ray simulation (tens of seconds)"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore:Secure RNG turned off:UserWarning",
+    "ignore:Using a non-full backward hook:UserWarning",
+]

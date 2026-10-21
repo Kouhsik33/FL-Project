@@ -1,0 +1,60 @@
+# Default experiment configuration. Every key is optional; omitted keys use the
+# defaults in src/fedmed/config.py. Override from the command line, e.g.
+#   python -m fedmed.experiments.run --config configs/default.yaml mode=centralized federated.rounds=10
+
+name: default
+mode: federated          # centralized | local | federated
+seed: 0                  # training seed: model init, batching, DP noise, client partition, dropout schedule
+
+data:
+  dataset: wdbc          # wdbc (primary) | heart_disease (secondary, has 4 natural sites)
+  val_frac: 0.2          # validation split: used for model/hyper-parameter selection only
+  test_frac: 0.2         # held-out global test set: final reporting only
+  split_seed: 0          # keep fixed so all comparable runs share one test set
+
+partition:
+  strategy: iid          # iid | dirichlet (label skew) | quantity_skew | natural (heart_disease only)
+  n_clients: 5           # number of simulated institutions (3, 5 or 10 tested)
+  alpha: null            # Dirichlet concentration for dirichlet / quantity_skew (smaller = more skewed)
+  min_train_per_client: 8
+
+model:
+  hidden: [32, 16]       # MLP hidden-layer widths (ReLU), 1 output logit
+
+train:
+  lr: 0.005              # SGD learning rate (selected on validation: results/tuning_*.json)
+  momentum: 0.9          # SGD momentum (optimizer state is reset every FL round)
+  weight_decay: 0.0
+  batch_size: 16         # with DP: *expected* Poisson batch size
+  local_epochs: 1        # local epochs per FL round
+  epochs: 20             # epochs for centralized and local-only baselines (= rounds x local_epochs)
+  threshold: 0.5         # predict positive when P(positive) >= threshold
+
+federated:
+  rounds: 20             # communication rounds (matched budget: rounds x local_epochs = epochs)
+  fraction_fit: 1.0      # fraction of *available* clients selected per round
+  min_fit_clients: 2     # rounds with fewer available clients / valid results are skipped
+  dropout_rate: 0.0      # P(institution unavailable at round start)
+  midround_failure_rate: 0.0  # P(selected institution crashes during local training)
+  round_timeout: 600     # seconds
+
+privacy:                 # record-level DP-SGD at every institution (Opacus)
+  enabled: false
+  noise_multiplier: 1.0  # sigma: Gaussian noise std / clipping norm
+  max_grad_norm: 1.0     # per-sample gradient L2 clipping bound C
+  delta: 1.0e-5          # target delta (< 1 / smallest client dataset size)
+  secure_mode: false     # Opacus secure RNG; slower; required for a deployable guarantee
+
+secagg:                  # Flower SecAgg+ (Bell et al., 2020)
+  enabled: false
+  num_shares: 1.0        # float: fraction of selected clients each secret is shared with
+  reconstruction_threshold: 0.6  # float: fraction of shares needed to reconstruct
+  max_weight: 1000.0     # upper bound on any client's sample count
+  clipping_range: 8.0    # parameters clipped to [-8, 8] before quantisation
+  quantization_range: 4194304   # 2**22 quantisation levels
+  timeout: 600
+
+output:
+  runs_dir: results/runs
+  save_checkpoints: true
+  tag: ""

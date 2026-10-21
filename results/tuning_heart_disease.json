@@ -1,0 +1,254 @@
+{
+ "selection": "min mean validation log loss",
+ "seeds": 3,
+ "best": {
+  "lr": 0.005,
+  "epochs": 20,
+  "batch_size": 16,
+  "val_log_loss_mean": 0.3589841519300452,
+  "val_accuracy_mean": 0.8442028985507246,
+  "val_roc_auc_mean": 0.9211700940538817
+ },
+ "grid": [
+  {
+   "lr": 0.001,
+   "epochs": 10,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.6385469575123046,
+   "val_accuracy_mean": 0.6449275362318841,
+   "val_roc_auc_mean": 0.8589590307667782
+  },
+  {
+   "lr": 0.001,
+   "epochs": 20,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.5417578987942672,
+   "val_accuracy_mean": 0.8170289855072465,
+   "val_roc_auc_mean": 0.905109198150805
+  },
+  {
+   "lr": 0.001,
+   "epochs": 30,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.4354832451369229,
+   "val_accuracy_mean": 0.8478260869565216,
+   "val_roc_auc_mean": 0.9157898931930495
+  },
+  {
+   "lr": 0.001,
+   "epochs": 50,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3661641133308116,
+   "val_accuracy_mean": 0.8550724637681159,
+   "val_roc_auc_mean": 0.922883787661406
+  },
+  {
+   "lr": 0.001,
+   "epochs": 100,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.36007754052875046,
+   "val_accuracy_mean": 0.8478260869565218,
+   "val_roc_auc_mean": 0.9200542005420053
+  },
+  {
+   "lr": 0.002,
+   "epochs": 10,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.5484008559526629,
+   "val_accuracy_mean": 0.8134057971014493,
+   "val_roc_auc_mean": 0.9031165311653115
+  },
+  {
+   "lr": 0.002,
+   "epochs": 20,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.38205401827419294,
+   "val_accuracy_mean": 0.8496376811594203,
+   "val_roc_auc_mean": 0.9204527339391042
+  },
+  {
+   "lr": 0.002,
+   "epochs": 30,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3630045596919431,
+   "val_accuracy_mean": 0.8514492753623188,
+   "val_roc_auc_mean": 0.9235612944364737
+  },
+  {
+   "lr": 0.002,
+   "epochs": 50,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3607348598413654,
+   "val_accuracy_mean": 0.8442028985507246,
+   "val_roc_auc_mean": 0.9203331739199746
+  },
+  {
+   "lr": 0.002,
+   "epochs": 100,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.378555526955117,
+   "val_accuracy_mean": 0.8297101449275361,
+   "val_roc_auc_mean": 0.9069823051171687
+  },
+  {
+   "lr": 0.005,
+   "epochs": 10,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3690025370379435,
+   "val_accuracy_mean": 0.8514492753623188,
+   "val_roc_auc_mean": 0.9224852542643074
+  },
+  {
+   "lr": 0.005,
+   "epochs": 20,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3589841519300452,
+   "val_accuracy_mean": 0.8442028985507246,
+   "val_roc_auc_mean": 0.9211700940538817
+  },
+  {
+   "lr": 0.005,
+   "epochs": 30,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3668143431336323,
+   "val_accuracy_mean": 0.8351449275362319,
+   "val_roc_auc_mean": 0.9159493065518891
+  },
+  {
+   "lr": 0.005,
+   "epochs": 50,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3915906461790988,
+   "val_accuracy_mean": 0.8260869565217391,
+   "val_roc_auc_mean": 0.9016021042563366
+  },
+  {
+   "lr": 0.005,
+   "epochs": 100,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.5349367428091083,
+   "val_accuracy_mean": 0.7898550724637682,
+   "val_roc_auc_mean": 0.8545353100589829
+  },
+  {
+   "lr": 0.01,
+   "epochs": 10,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.36592083378626694,
+   "val_accuracy_mean": 0.8460144927536232,
+   "val_roc_auc_mean": 0.9208512673362028
+  },
+  {
+   "lr": 0.01,
+   "epochs": 20,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3736119608577733,
+   "val_accuracy_mean": 0.8278985507246377,
+   "val_roc_auc_mean": 0.9116451458632234
+  },
+  {
+   "lr": 0.01,
+   "epochs": 30,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.4072845081739338,
+   "val_accuracy_mean": 0.8206521739130435,
+   "val_roc_auc_mean": 0.8949465965247887
+  },
+  {
+   "lr": 0.01,
+   "epochs": 50,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.5047973184599771,
+   "val_accuracy_mean": 0.7789855072463768,
+   "val_roc_auc_mean": 0.8577634305754822
+  },
+  {
+   "lr": 0.01,
+   "epochs": 100,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.8386600916376986,
+   "val_accuracy_mean": 0.7699275362318841,
+   "val_roc_auc_mean": 0.8218954248366014
+  },
+  {
+   "lr": 0.05,
+   "epochs": 10,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.3905378628742524,
+   "val_accuracy_mean": 0.8242753623188407,
+   "val_roc_auc_mean": 0.9041527179977682
+  },
+  {
+   "lr": 0.05,
+   "epochs": 20,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.4609676218581367,
+   "val_accuracy_mean": 0.8061594202898551,
+   "val_roc_auc_mean": 0.871353419416547
+  },
+  {
+   "lr": 0.05,
+   "epochs": 30,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.5853600112627192,
+   "val_accuracy_mean": 0.7844202898550726,
+   "val_roc_auc_mean": 0.861150964450821
+  },
+  {
+   "lr": 0.05,
+   "epochs": 50,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.8002852030765194,
+   "val_accuracy_mean": 0.7771739130434782,
+   "val_roc_auc_mean": 0.8455882352941178
+  },
+  {
+   "lr": 0.05,
+   "epochs": 100,
+   "batch_size": 16,
+   "val_log_loss_mean": 1.5018780792387105,
+   "val_accuracy_mean": 0.7663043478260869,
+   "val_roc_auc_mean": 0.8357245337159253
+  },
+  {
+   "lr": 0.1,
+   "epochs": 10,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.39965823231218306,
+   "val_accuracy_mean": 0.8351449275362319,
+   "val_roc_auc_mean": 0.9008050374621392
+  },
+  {
+   "lr": 0.1,
+   "epochs": 20,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.5014413810229675,
+   "val_accuracy_mean": 0.7934782608695653,
+   "val_roc_auc_mean": 0.8608719910728518
+  },
+  {
+   "lr": 0.1,
+   "epochs": 30,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.6326377741276928,
+   "val_accuracy_mean": 0.7898550724637681,
+   "val_roc_auc_mean": 0.8460465487007811
+  },
+  {
+   "lr": 0.1,
+   "epochs": 50,
+   "batch_size": 16,
+   "val_log_loss_mean": 0.9515662992482454,
+   "val_accuracy_mean": 0.7590579710144928,
+   "val_roc_auc_mean": 0.8190259843774909
+  },
+  {
+   "lr": 0.1,
+   "epochs": 100,
+   "batch_size": 16,
+   "val_log_loss_mean": 1.056367281922795,
+   "val_accuracy_mean": 0.7807971014492754,
+   "val_roc_auc_mean": 0.8480989956958392
+  }
+ ]
+}

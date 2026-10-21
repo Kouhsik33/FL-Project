@@ -1,0 +1,28 @@
+# Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Datasets: never commit raw or processed data (download with scripts/download_data.py)
+data/raw/
+data/processed/
+
+# Generated experiment artefacts (re-create with the commands in README.md)
+results/runs/
+results/checkpoints/
+results/*.log
+
+# Secrets / local config
+.env
+*.key
+*.pem
+secrets*
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
